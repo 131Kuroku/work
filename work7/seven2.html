@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>第八周作业2</title>
+    <meta charset="UTF-8">
+    <script>
+        function copy(){
+            var one=document.getElementById("one").value;
+            var two=document.getElementById("two").value;
+            document.getElementById("two").value=one;
+            if(!one=="" ||!two==""){
+                document.getElementById("word").innerHTML="复制成功！"
+            }
+        }
+    </script>
+    <style>
+        #word{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="one">
+    <input type="button" value="复制" onclick="copy()">
+    <input type="text" id="two"><br/>
+    <p id="word"></p>
+</body>
+</html>
